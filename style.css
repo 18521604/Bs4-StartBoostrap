@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar-brand{
+    font-family: 'Kaushan Script', cursive;
+}
+html,body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*--------------------- navbar section ------------------------*/
+
+nav.navbar.navbar-expand-lg.navbar-light.fixed-top {
+    background-color: #212529;
+}
+
+.navbar a.navbar-brand {
+    color: #fed136;
+}
+
+li.nav-item {
+    color: #fff;
+}
+
+ul.navbar-nav.ml-auto.mt-2.mt-lg-0 {
+    text-transform: uppercase;
+}
+
+#collapsibleNavId a.nav-link {
+    color: #fff;
+    font-size: 93%;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.navbar button.navbar-toggler.hidden-lg-up {
+    background: #fed136;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar a.navbar-brand:hover{
+    color: #fed136;
+}
+
+#collapsibleNavId a.nav-link:hover {
+    color: #fed136;
+}
+/*--------------- Header section ---------------*/
+#header .content .intro-lead-in {
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+    margin-bottom: 25px;
+}
+
+#header .content .intro-heading{
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+section#header {
+    background-image: url(../images/header-bg.jpg);
+    background-size: cover;
+    height: 1000px;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#header a.btn.btn-primary {
+    background: #fed136;
+    border: #fed136;
+    font-size: 18px;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#header a.btn.btn-primary:hover{
+    background-color: #fec810!important;
+    border: #fec810!important;
+    color: #fff;
+}
+
+/*-------------------------------- Services section ------------------------ */
+h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#services,#portfolio,#about,#team,#contact{
+    padding: 100px 0;
+}
+
+h3.section-sub {
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    color: #6c757d!important;
+    margin-bottom: 75px;
+}
+
+#services i.fas {
+    background: #fed136!important;
+    color: #fff;
+    font-size: 59px;
+    padding: 30px 27px;
+    border-radius: 50%;
+}
+
+#services i.fas.fa-lock {
+    padding: 30px 35px;
+}
+
+#services h4.service-heading {
+    margin: 15px 0;
+}
+
+#services p.service-sub {
+    color: #6c757d!important;
+    line-height: 1.75;
+    text-align: center;
+    font-size: 17px;
+}
+
+/*-------------------------------- Portfolio ---------------------------*/
+section#portfolio {
+    background: #f8f9fa!important;
+}
+
+#portfolio a.portfolio-link {
+    position: relative;
+    max-width: 400px;
+    display: block;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+#portfolio .portfolio-link .portfolio-hover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s ease;
+    background: rgba(254,209,54,.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: #fff;
+    opacity: 0;
+}
+
+#portfolio .portfolio-item .portfolio-caption.text-center {
+    background: #fff;
+    padding: 25px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+#portfolio .col-md-4.col-sm-6.portfolio-item {
+    margin: 0 0 30px;
+}
+
+#portfolio .portfolio-caption p {
+    margin: 0;
+}
+
+#portfolio .portfolio-caption h4 {
+    margin: 0;
+    font-weight: 600;
+    line-height: 1.5;
+}
+#portfolio .portfolio-link .portfolio-hover:hover{
+    opacity: 1;
+}
+
+/* large desktop */
+@media (min-width: 992px){
+    nav.navbar.navbar-expand-lg.navbar-light.fixed-top {
+        background: transparent!important;
+        padding: 25px 16px;
+        border: none;
+    }
+
+    .navbar a.navbar-brand {
+        color: #fed136;
+        font-size: 1.75em;
+        transition: all 0.3s;
+    }
+
+    #collapsibleNavId a.nav-link{
+        padding: 1.1em 1em!important;
+    }
+}
+
+/* md desktop */
+@media (min-width: 768px){
+    #header .content .intro-lead-in {
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+        margin-bottom: 25px;
+    }
+
+    #header .content .intro-heading{
+        font-size: 75px;
+        line-height: 75px;
+        margin-bottom: 50px;
+        font-weight: 600;
+        text-transform: uppercase;
+        word-spacing: 5px;
+        letter-spacing: 3px;
+    }
+}
+
+
