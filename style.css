@@ -187,23 +187,85 @@ section#portfolio {
     opacity: 1;
 }
 
-/* large desktop */
-@media (min-width: 992px){
-    nav.navbar.navbar-expand-lg.navbar-light.fixed-top {
-        background: transparent!important;
-        padding: 25px 16px;
-        border: none;
-    }
+/*-------------------------- About ------------------------------*/
+#about ul.timeline {
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
 
-    .navbar a.navbar-brand {
-        color: #fed136;
-        font-size: 1.75em;
-        transition: all 0.3s;
-    }
+#about .timeline>li .timeline-image {
+    position: absolute;
+    z-index: 100;
+    text-align: center;
+    border: 7px solid #e9ecef;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: #fed136;
+}
 
-    #collapsibleNavId a.nav-link{
-        padding: 1.1em 1em!important;
-    }
+
+#about .timeline>li img.img-fluid {
+    border-radius: 50%!important;
+}
+
+#about .timeline>li {
+    min-height: 50px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+#about .timeline>li .timeline-panel {
+    position: relative;
+    float: right;
+    width: 100%;
+    text-align: left;
+    padding: 0 20px 0 100px;
+}
+
+#about .timeline>li.timeline-inverted .timeline-panel {
+    float: right;
+    text-align: left;
+    padding: 0 20px 0 100px;
+}
+
+.timeline-panel h4 {
+    font-weight: 800;
+}
+
+p.timeline-sub {
+    color: #6c757d!important;
+    margin-bottom: 0;
+}
+
+#about .timeline>li::before, #about .timeline>li::after{
+    content: ' ';   
+    display: table;
+}
+
+#about .timeline>li::after{
+    clear: both;
+}
+
+#about .timeline::before{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    background-color: #e9ecef;
+    width: 2px;
+    content: '';
+}
+
+#about .timeline-image h4 {
+    font-size: 10px;
+    margin-top: 12px;
+    line-height: 14px;
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 0.05em;
+    word-spacing: 1px;
 }
 
 /* md desktop */
@@ -224,6 +286,110 @@ section#portfolio {
         word-spacing: 5px;
         letter-spacing: 3px;
     }
+
+    #about .timeline>li .timeline-image {
+        width: 100px;
+        height: 100px;  
+        margin-left: -50px;
+        left: 50%;
+    }
+
+    #about .timeline>li {
+        min-height: 100px;
+        margin-bottom: 100px;
+    }
+
+    #about .timeline>li .timeline-panel {
+        float: left;
+        text-align: right;
+        width: 41%;
+        padding: 0 20px 20px 30px;
+    }
+
+    #about .timeline>li.timeline-inverted .timeline-panel {
+        float: right;
+        text-align: left;
+        padding: 0 30px 20px 20px;
+    }
+
+    #about .timeline::before{
+        left: 50%;
+    }
+
+    #about .timeline-image h4{
+        font-size: 13px;
+        margin-top: 17px;
+        line-height: 16px;
+    }
 }
+
+/* large desktop */
+@media (min-width: 992px){
+    nav.navbar.navbar-expand-lg.navbar-light.fixed-top {
+        background: transparent!important;
+        padding: 25px 16px;
+        border: none;
+    }
+
+    .navbar a.navbar-brand {
+        color: #fed136;
+        font-size: 1.75em;
+        transition: all 0.3s;
+    }
+
+    #collapsibleNavId a.nav-link{
+        padding: 1.1em 1em!important;
+    }
+
+    #about .timeline>li .timeline-image {
+        width: 150px;
+        height: 150px;  
+        margin-left: -75px;
+    }
+
+    #about .timeline>li {
+        min-height: 150px;
+    }
+
+    #about .timeline>li .timeline-panel {
+        padding: 0 20px 20px;
+    }
+
+    #about .timeline>li.timeline-inverted .timeline-panel {
+        padding: 0 20px 20px;
+    }
+
+    #about .timeline-image h4{
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 29px;
+    }
+}
+
+/*very large desktop*/
+@media (min-width: 1200px){
+    #about .timeline>li .timeline-image {
+        width: 170px;
+        height: 170px;  
+        margin-left: -85px;
+    }
+
+    #about .timeline>li {
+        min-height: 170px;
+    }
+
+    #about .timeline>li .timeline-panel {
+        padding: 0 20px 20px 100px;
+    }
+
+    #about .timeline>li.timeline-inverted .timeline-panel {
+        padding: 0 100px 20px 20px;
+    }
+
+    #about .timeline-image h4{
+        margin-top: 40px;
+    }
+}
+
 
 
