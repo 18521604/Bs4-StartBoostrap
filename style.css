@@ -81,7 +81,7 @@ ul.navbar-nav.ml-auto.mt-2.mt-lg-0 {
 section#header {
     background-image: url(../images/header-bg.jpg);
     background-size: cover;
-    height: 1000px;
+    height: 760px;
     background-position: center;
     color: #fff;
     text-align: center;
@@ -99,8 +99,8 @@ section#header {
 }
 
 #header a.btn.btn-primary:hover{
-    background-color: #fec810!important;
-    border: #fec810!important;
+    background-color: #fac308!important;
+    border: #fac308!important;
     color: #fff;
 }
 
@@ -421,6 +421,26 @@ section#footer {
     line-height: 50px;
 }
 
+/*Button up top*/
+a.btn-up {
+    background: #fed136;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    color: #fff;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+a.btn-up:hover {
+    background: #fac308;
+}
+
 /* md desktop */
 @media (min-width: 768px){
     #header .content .intro-lead-in {
@@ -479,9 +499,10 @@ section#footer {
 /* large desktop */
 @media (min-width: 992px){
     nav.navbar.navbar-expand-lg.navbar-light.fixed-top {
-        background: transparent!important;
+        background: transparent;
         padding: 25px 16px;
         border: none;
+        transition: all 0.3s;
     }
 
     .navbar a.navbar-brand {
@@ -516,6 +537,28 @@ section#footer {
         font-size: 18px;
         line-height: 26px;
         margin-top: 29px;
+    }
+
+    /*Button up top*/
+    a.btn-up {
+        bottom: 15px;
+        right: 15px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 30px;
+    }
+
+    /* jQuery navbar */
+    nav.navbar.navbar-expand-lg.navbar-light.fixed-top.navbar-shrink{
+        background-color: #212529;
+        padding-top: 0;
+        padding-bottom: 0;
+    }   
+
+    .navbar.navbar-shrink a.navbar-brand{
+        font-size: 1.25em;
+        padding: 12px 0;
     }
 }
 
