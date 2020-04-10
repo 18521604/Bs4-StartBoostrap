@@ -58,9 +58,11 @@ ul.navbar-nav.ml-auto.mt-2.mt-lg-0 {
     color: #fed136;
 }
 
-#collapsibleNavId a.nav-link:hover {
+#collapsibleNavId a.nav-link:hover,
+#collapsibleNavId a.nav-link.active {
     color: #fed136;
 }
+
 /*--------------- Header section ---------------*/
 #header .content .intro-lead-in {
     font-size: 22px;
@@ -425,6 +427,7 @@ section#footer {
 a.btn-up {
     background: #fed136;
     position: fixed;
+    display: none; /*to help fadeOut btn when reset web*/
     bottom: 10px;
     right: 10px;
     width: 40px;
@@ -434,7 +437,7 @@ a.btn-up {
     font-size: 25px;
     color: #fff;
     border-radius: 10px;
-    transition: all 0.3s;
+    transition: background 0.5s;
 }
 
 a.btn-up:hover {
